@@ -1,0 +1,14 @@
+@charset "ISO-8859-1";
+
+h2 {
+	text-align: center;
+}
+
+form {
+	margin: 20px auto;
+	width: 30%;
+}
+
+.formstyle {
+	padding: 7px 3rem;
+}

@@ -1,0 +1,39 @@
+CREATE TABLE `admin` (
+  `adminid` varchar(25) NOT NULL,
+  `password` varchar(45) DEFAULT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`adminid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `driver` (
+  `firstname` varchar(25) DEFAULT NULL,
+  `lastname` varchar(25) DEFAULT NULL,
+  `driverid` varchar(25) NOT NULL,
+  `dob` date DEFAULT NULL,
+  `mobilenumber` varchar(25) DEFAULT NULL,
+  `vehiclenumber` varchar(25) DEFAULT NULL,
+  `plan` varchar(25) DEFAULT NULL,
+  `password` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`driverid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `ride` (
+  `userid` varchar(25) NOT NULL,
+  `source` varchar(25) DEFAULT NULL,
+  `destination` varchar(25) DEFAULT NULL,
+  `plan` varchar(25) DEFAULT NULL,
+  `fare` varchar(25) DEFAULT NULL,
+  `status` varchar(25) DEFAULT NULL,
+  `driverid` varchar(25) DEFAULT NULL,
+  `location` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`userid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `user` (
+  `userid` varchar(20) NOT NULL,
+  `firstname` varchar(20) DEFAULT NULL,
+  `lastname` varchar(20) DEFAULT NULL,
+  `dob` date DEFAULT NULL,
+  `gender` varchar(1) DEFAULT NULL,
+  `emailid` varchar(20) DEFAULT NULL,
+  `mobilenumber` varchar(20) DEFAULT NULL,
+  `password` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`userid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

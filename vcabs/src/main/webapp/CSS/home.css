@@ -1,0 +1,71 @@
+@charset "ISO-8859-1";
+
+body {
+	background-image: url("CSSImages/bgcover2.jpg");
+	min-height: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: "Montserrat";
+	font-weight: bold;
+}
+
+h1 {
+	font-family: 'Fontdiner Swanky', cursive;
+	color: white;
+}
+
+#title {
+	padding-bottom: 0;
+}
+
+#price {
+	text-align: center;
+}
+
+#features {
+	margin: 1.5rem 0;
+}
+
+#footer {
+	padding: 7% 15%;
+	text-align: center;
+}
+
+p {
+	color: black;
+}
+
+.navbar-nav {
+	background-color: white;
+	font-size: 1.3rem;
+}
+
+.container-fluid {
+	padding: 3% 15% 7%;
+}
+
+.logo {
+	width: 300px;
+}
+
+.featuresimage {
+	margin: auto;
+}
+
+.faturesparagraph {
+	color: white;
+	display: inline-block;
+	background-color: black;
+	font-family: "Montserrat";
+	font-weight: bold;
+}
+
+.featuresheading {
+	display: inline-block;
+	background-color: red;
+	font-family: "Montserrat";
+	font-weight: bold;
+}
